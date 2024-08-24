@@ -24,7 +24,7 @@ function TodoForm() {
                 value={todo}
                 onChange={(e)=>setTodo(e.target.value)}
             />
-            <button type="submit" className="rounded-r-lg px-3 py-1 bg-green-600 text-white text-3xl sm:text-base shrink-0">
+            <button type="submit" className="rounded-r-lg px-3 py-1 bg-green-600 text-white lg:text-3xl sm:text-sm shrink-0">
                 <FaNotesMedical/>
             </button>
         </form>
