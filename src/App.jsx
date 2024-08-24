@@ -41,10 +41,11 @@ useEffect(() => {
   return (
     <TodoProvider value={{todos, addTodo, updateTodo, deleteTodo, toggleComplete}}> 
     <>
-      <div className=" w-full min-h-screen m-0 p-0 " 
+      <div className=" w-screen min-h-screen border border-red-600 overflow-x-hidden overflow-y-auto py-10" 
        style={{
                 backgroundImage: `url('https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
                 backgroundSize: "cover",
+                backgroundPosition: "center",
             }}>
         <div className="w-full  bg-[#172842] max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white" >
           <div className="flex  gap-5 justify-center p-5 text-4xl"><FaHandHoldingMedical/> <FaBriefcaseMedical/> <FaStethoscope/> <BiSolidInjection/> <FaFileMedicalAlt/></div>

@@ -54,7 +54,7 @@ function TodoItem({ todo }) {
             </button>
        
             <button
-                className="inline-flex lg:text-3xl  sm:text-sm justify-center items-center  "
+                className="inline-flex lg:text-3xl  sm:text-lg justify-center items-center  "
                 onClick={() => deleteTodo(todo.id)}
             >
                 <MdDeleteForever/>
