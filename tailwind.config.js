@@ -1,6 +1,6 @@
 module.exports = {
   corePlugins: {
-    preflight: false, // Disable Tailwind's Preflight if you want full control
+    preflight: true, // Disable Tailwind's Preflight if you want full control
   },
   content: ['./src/**/*.{html,js,jsx,ts,tsx}'], // Adjust this to your file paths
   theme: {
