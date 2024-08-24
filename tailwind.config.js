@@ -1,12 +1,22 @@
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+module.exports = {
+  corePlugins: {
+    preflight: false, // Disable Tailwind's Preflight if you want full control
+  },
+  content: ['./src/**/*.{html,js,jsx,ts,tsx}'], // Adjust this to your file paths
   theme: {
     extend: {},
   },
-  plugins: [],
-}
+  plugins: [
+    function({ addBase }) {
+      addBase({
+        '*': {
+          margin: '0',
+          padding: '0',
+          boxSizing: 'border-box',
+        },
+      });
+    },
+  ],
+};
+
 

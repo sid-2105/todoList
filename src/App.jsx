@@ -48,7 +48,7 @@ useEffect(() => {
             }}>
         <div className="w-full  bg-[#172842] max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white" >
           <div className="flex  gap-5 justify-center p-5 text-4xl"><FaHandHoldingMedical/> <FaBriefcaseMedical/> <FaStethoscope/> <BiSolidInjection/> <FaFileMedicalAlt/></div>
-          <h1 className="text-2xl font-bold  text-center mb-8 mt-2">Manage Your Task Dr. Anjali </h1>
+          <h1 className="text-2xl font-bold  text-center sm:text-xl mb-8 mt-2">Manage Your Task Dr. Anjali </h1>
           <div className="mb-4" >
            <TodoForm />
           </div>

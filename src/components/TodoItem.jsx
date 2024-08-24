@@ -31,16 +31,16 @@ function TodoItem({ todo }) {
             />
             <input
                 type="text"
-                className={`border outline-none w-full bg-transparent rounded-lg ${
-                    isTodoEditable ? "border-black/10 px-2" : "border-transparent"
-                } ${todo.completed ? "line-through" : ""}`}
+                className={`border outline-none w-full bg-transparent rounded-lg 
+                    ${isTodoEditable ? "border-black/10 px-2" : "border-transparent"} 
+                    ${todo.completed ? "line-through" : ""}`}
                 value={todoMsg}
                 onChange={(e) => setTodoMsg(e.target.value)}
                 readOnly={!isTodoEditable}
             />
 
             <button
-                className="inline-flex w-8 h-8 rounded-lg text-2xl  justify-center items-center shrink-0 disabled:opacity-50"
+                className="inline-flex w-8 h-8 rounded-lg text-2xl sm:text-base justify-center items-center shrink-0 disabled:opacity-50"
                 onClick={() => {
                     if (todo.completed) return;
 
@@ -54,7 +54,7 @@ function TodoItem({ todo }) {
             </button>
        
             <button
-                className="inline-flex w-8 h-8 rounded-lg text-3xl  justify-center items-center  shrink-0 "
+                className="inline-flex w-8 h-8 rounded-lg text-3xl  sm:text-base justify-center items-center  shrink-0 "
                 onClick={() => deleteTodo(todo.id)}
             >
                 <MdDeleteForever/>
