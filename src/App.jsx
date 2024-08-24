@@ -41,7 +41,7 @@ useEffect(() => {
   return (
     <TodoProvider value={{todos, addTodo, updateTodo, deleteTodo, toggleComplete}}> 
     <>
-      <div className=" w-full min-h-screen m-0 py-10 " 
+      <div className=" w-full min-h-screen m-0 p-0 " 
        style={{
                 backgroundImage: `url('https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`,
                 backgroundSize: "cover",
